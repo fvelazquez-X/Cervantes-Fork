@@ -103,5 +103,4 @@ jobs:
       with:
         category: "/language:${{matrix.language}}"
 
-    - name: Aqua Security Trivy
-      uses: aquasecurity/trivy-action@0.31.0
+

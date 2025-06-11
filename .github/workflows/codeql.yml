@@ -9,6 +9,10 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
+
+
+
+
 name: "CodeQL Advanced"
 
 on:
@@ -98,3 +102,6 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
+
+    - name: Aqua Security Trivy
+      uses: aquasecurity/trivy-action@0.31.0
